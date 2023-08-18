@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geometry Genius</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body>
+    <header>
+        <section class="max-w-screen-xl mx-auto my-10 px-8 md:px-16 lg:px-24">
+            <div class="bg-blue-200 flex flex-row justify-between items-center px-10 py-2 rounded-md">
+
+                <div>
+                    <h1 class="text-2xl font-semibold"> Interactive <br> <span class="text-base font-semibold">Geometry
+                            Genius</span></h1>
+                </div>
+                <div>
+                    <button class="btn btn-outline btn-primary btn-xs">Blog</button>
+                </div>
+
+            </div>
+        </section>
+    </header>
+    <main>
+
+        <section class="max-w-screen-xl mx-auto my-10 px-8 md:px-16 lg:px-24">
+            <!-- Container -->
+            <div class="flex flex-col lg:flex-row gap-5">
+                <!-- Shape -->
+                <div class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+                    <!-- Triangle Card -->
+                    <div class="card w-[250px] bg-base-100 shadow-xl p-4">
+                        <figure><img class="w-[160px]" src="./images/triangle.png" alt="Card" /></figure>
+                        <div class="card-body">
+                            <h2 class="card-title">Triangle</h2>
+                            <p>
+                                Area (A) = 0.5 * b * h
+                            </p>
+                            <div>
+                                <input id="triangle-base"
+                                    class="w-12 border-2 border-gray-100 bg-gray-200 rounded text-xs px-2 py-1"
+                                    type="text" placeholder="b">
+                                <span class="text-xs">cm</span>
+
+                                <input id="triangle-height"
+                                    class="w-12 border-2 border-gray-100 bg-gray-200 rounded text-xs px-2 py-1"
+                                    type="text" placeholder="h">
+                                <span class="text-xs">cm</span>
+
+                                <h3>Area: <span id="triangle-area">0</span></h3>
+                            </div>
+                            <div class="card-actions ">
+                                <button id="triangle-btn" class="btn btn-primary w-full">Calculate</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Rectangle Card -->
+                    <div class="card w-[250px] bg-base-100 shadow-xl p-4">
+                        <figure><img class="w-[200px]" src="./images/rectangle.png" alt="Card" /></figure>
+                        <div class="card-body">
+                            <h2 class="card-title">Rectangle</h2>
+                            <p>
+                                Area (A) = w * I
+                            </p>
+
+                            <div>
+                                <input id="rectangle-width"
+                                    class="w-12 border-2 border-gray-100 bg-gray-200 rounded text-xs px-2 py-1"
+                                    type="text" placeholder="w">
+                                <span class="text-xs">cm</span>
+
+                                <input id="rectangle-length"
+                                    class="w-12 border-2 border-gray-100 bg-gray-200 rounded text-xs px-2 py-1"
+                                    type="text" placeholder="l">
+                                <span class="text-xs">cm</span>
+
+                                <h3>Area: <span id="rectangle-area">0</span></h3>
+                            </div>
+
+                            <div id="rectangle-btn" class="card-actions">
+                                <button class="btn btn-primary w-full">Calculate</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card-3 -->
+                    <div class="card w-[250px] bg-base-100 shadow-xl p-4">
+                        <figure><img class="w-[220px]" src="./images/parallelogram.png" alt="Card" /></figure>
+                        <div class="card-body">
+                            <h2 class="card-title">Parallelogram</h2>
+                            <p>
+                                Area (A) = b * h
+                            </p>
+
+                            <div>
+                                <input class="w-12 border-2 border-gray-100 bg-gray-200 rounded text-xs px-2 py-1"
+                                    type="text" placeholder="b">
+                                <span class="text-xs">cm</span>
+
+                                <input class="w-12 border-2 border-gray-100 bg-gray-200 rounded text-xs px-2 py-1"
+                                    type="text" placeholder="h">
+                                <span class="text-xs">cm</span>
+
+                                <h3>Area:</h3>
+                            </div>
+
+                            <div class="card-actions ">
+                                <button class="btn btn-primary w-full">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="w-[250px] border-2 p-2 text-center">
+                    <div class="text-2xl">Area Calculator</div>
+                </div>
+
+
+            </div>
+        </section>
+
+    </main>
+
+    <script src="js/utilities.js"></script>
+    <script src="js/area-calculator.js"></script>
+</body>
+
+</html>
