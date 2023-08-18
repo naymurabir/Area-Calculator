@@ -14,11 +14,11 @@ function getTextElementValueById(elementId) {
     const textElement = document.getElementById(elementId)
     const textElementValueString = textElement.innerText
     const textElementValue = parseFloat(textElementValueString)
-    return textElementValue
+    return textElementValue;
 }
 
 // Set Text Element Value by Id 
 function setTextElementValueById(elementId, newValue) {
     const element = document.getElementById(elementId)
-    element.innerText = newValue
+    element.innerText = newValue;;
 }
