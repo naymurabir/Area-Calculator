@@ -16,3 +16,11 @@ document.getElementById('rectangle-btn').addEventListener('click', function () {
     const calculateRectangleArea = rectangleWidth * rectangleLength
     setTextElementValueById('rectangle-area', calculateRectangleArea)
 })
+
+// Parallelogram Area Calculate:
+document.getElementById('parallelogram-btn').addEventListener('click', function () {
+    const parallelogramBase = getInputFieldValueById('parallelogram-base')
+    const parallelogramHeight = getInputFieldValueById('parallelogram-height')
+    const calculateParallelogramArea = parallelogramBase * parallelogramHeight
+    setTextElementValueById('parallelogram-area', calculateParallelogramArea)
+})
